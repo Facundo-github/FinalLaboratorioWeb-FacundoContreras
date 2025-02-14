@@ -5,3 +5,22 @@ body {
     background-color:gainsboro;
 }
 
+h1{
+    background-color: blue;
+    text-align: center;
+}
+
+table{
+    border: 1;
+}
+
+li{
+    display: inline-flex;
+}
+
+#pie{
+    background-color: azure;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
