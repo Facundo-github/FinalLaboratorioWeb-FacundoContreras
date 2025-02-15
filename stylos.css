@@ -6,7 +6,66 @@ body {
 }
 
 h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeIn 1s;
+}
+
+.logo{
+    display: flex;
+    margin-right: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: cornflowerblue;
+    width: 100%;
+}
+
+header .logo{
+    width: 80px;
+    height: 80px;
+    animation: rotate 1s linear;
+}
+
+@keyframes rotate {
+    form{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes rotatelogo {
+    form{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+nav{
+    list-style-type: none;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 10px;
+    justify-content: space-evenly;
     text-align: center;
+}
+
+ul li {
+    display: inline;
+    text-align: center;
+    margin: 50px;
 }
 
 section{
@@ -16,9 +75,17 @@ section{
 
 }
 
-logo{
-    display: block;
-    margin: 0 auto;
+.acerca-de{
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid blueviolet;
+}
+
+.sty
+
+.titulo{
+    padding-top: 60px;
 }
 
 article{
@@ -26,7 +93,9 @@ article{
 }
 
 table{
+    width: 50%;
     border-collapse: collapse;
+    margin-top: 10px;
     margin: 20px;
 }
 

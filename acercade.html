@@ -9,17 +9,39 @@
 
 <body>
     
-    <header>
-        <h1> Bienvenido a mi pagina personal </h1>
-        <img src="logocurza.png" alt="logo">
+    <header class="fixed-header">
+        <div class="titulo">
+            <h1> Programación Estatica y Laboratorio Web </h1>
+        </div>
+        <div class="logo">
+            <img src="logocurza.png" alt="logo">
+        </div>
     </header>
     
-    <section>
-        <p>
-            Mi nombre es Facundo Rodrigo Contreras, naci el 13 de Marzo de 1992 en la ciudad de Viedma provincia de Rio Negro. Soy tecnico agronomo, tecnico en repacion de celulares y estudiante de la carrera de desarrollo web. Trabajo como docente en nivel secundario.
-            Mi hobby es el stand up paddle sobre aguas planas, de manera recreativa y competitiva.
-        </p>
+    <section id="acerca-de">
+        <div id="resumen">
+            <p>
+                Mi nombre es Facundo Rodrigo Contreras 
+            </p>
+            <button onclick="mostrarCompleto()">Leer más </button>
+        </div>
+        <div id="completo" style="display: none;">
+            <p>
+                Mi nombre es Facundo Rodrigo Contreras  
+            </p>
+            <p>
+                Naci el 13 de Marzo de 1992 en la ciudad de Viedma provincia de Rio Negro. Soy tecnico agronomo, tecnico en repacion de celulares y estudiante de la carrera de desarrollo web. Trabajo como docente en nivel secundario.
+                Mi hobby es el stand up paddle sobre aguas planas, de manera recreativa y competitiva.
+            </p>
+        </div>
+    
     </section>
+    <script>
+        function mostrarCompleto(){
+            document.getElementById("resumen").style.display="none";
+            document.getElementById("completo").style.display="block";
+        }
+    </script>
 
     <section class="info">
         <p>
