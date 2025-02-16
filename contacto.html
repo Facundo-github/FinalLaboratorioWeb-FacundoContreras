@@ -16,7 +16,7 @@
 
     <header class="fixed-header">
         <div class="titulo">
-            <h1> Programación Estatica y Laboratorio Web </h1>
+            <h1> Contacto </h1>
         </div>
         <div class="logo">
             <img src="logocurza.png" alt="logo">
@@ -28,27 +28,27 @@
         <form action="#">
             <!-- Nombre -->
             <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" maxlength="20" required><br><br>
+            <input type="text" id="nombre" name="nombre" maxlength="20" required>
             
             <!-- Apellido -->
             <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" maxlength="20"><br><br>
+            <input type="text" id="apellido" name="apellido" maxlength="20">
             
             <!-- Email -->
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="email" id="email" name="email" required>
             
             <!-- Teléfono -->
             <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingrese su teléfono'" placeholder="Ingrese su teléfono"><br><br>
+            <input type="tel" id="telefono" name="telefono" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ingrese su teléfono'" placeholder="Ingrese su teléfono">
             
             <!-- Edad -->
             <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" min="16" max="120"><br><br>
+            <input type="number" id="edad" name="edad" min="16" max="120">
             
             <!-- Dirección -->
             <label for="direccion">Dirección:</label>
-            <input type="text" id="direccion" name="direccion"><br><br>
+            <input type="text" id="direccion" name="direccion">
             
             <!-- Provincia -->
             <label for="provincia">Provincia:</label>
@@ -59,31 +59,44 @@
                 <option value="Chubut">
                 <option value="Santa Cruz">
                 <option value="Tierra del Fuego">
-            </datalist><br><br>
+            </datalist>
             
             <!-- Código Postal -->
             <label for="codigoPostal">Código Postal:</label>
-            <input type="text" id="codigoPostal" name="codigoPostal" pattern="[A-Z]{1}[0-9]{4}[A-Z]{3}"><br><br>
+            <input type="text" id="codigoPostal" name="codigoPostal" pattern="[A-Z]{1}[0-9]{4}[A-Z]{3}">
+            
             
             <!-- Método Preferido de Contacto -->
-            <label>Método Preferido de Contacto:</label><br>
-            <input type="radio" id="correoElectronico" name="metodoContacto" value="correoElectronico" checked>
-            <label for="correoElectronico">Correo Electrónico</label><br>
-            <input type="radio" id="correoPostal" name="metodoContacto" value="correoPostal">
-            <label for="correoPostal">Correo Postal</label><br>
-            <input type="radio" id="telefonoContacto" name="metodoContacto" value="telefonoContacto">
-            <label for="telefonoContacto">Teléfono</label><br><br>
+            <fieldset>
+                <legend>Método preferido de contacto:</legend> 
+                <label>
+                    <input type="radio" id="correo_electronico" name="metodo_contacto" value="correo_electronico" checked> Correo electrónico 
+                </label>
+                <label>
+                    <input type="radio" id="correo_postal" name="metodo_contacto" value="correo_postal"> Correo postal 
+                </label>
+                <label>
+                    <input type="radio" id="telefono_contacto" name="metodo_contacto" value="telefono"> Teléfono 
+                </label>
+            </fieldset>
             
             <!-- Tipo de Suscripción -->
-            <label>Tipo de Suscripción:</label><br>
-            <input type="checkbox" id="noticias" name="suscripcion" value="noticias">
-            <label for="noticias">Noticias</label><br>
-            <input type="checkbox" id="promociones" name="suscripcion" value="promociones">
-            <label for="promociones">Promociones</label><br>
-            <input type="checkbox" id="alertas" name="suscripcion" value="alertas" checked>
-            <label for="alertas">Alertas</label><br>
-            <input type="checkbox" id="eventos" name="suscripcion" value="eventos">
-            <label for="eventos">Eventos</label><br><br>
+            <fieldset> <legend>Tipo de suscripción:</legend> 
+                <label>
+                    <input type="checkbox" id="noticias" name="suscripcion" value="noticias"> Noticias
+                </label>
+                <label>
+                    <input type="checkbox" id="promociones" name="suscripcion" value="promociones"> Promociones 
+                </label>
+                <label>
+                    <input type="checkbox" id="alertas" name="suscripcion" value="alertas" checked> Alertas 
+                </label>
+                <label>
+                    <input type="checkbox" id="eventos" name="suscripcion" value="eventos"> Eventos 
+                </label>
+                
+            </fieldset>
+            
             
             <!-- Botón Cargar -->
             <button type="button">Cargar</button>
