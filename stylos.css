@@ -29,6 +29,7 @@ main{
     flex-direction: column;
     margin-left: 20px;
     flex-grow: 1;
+    margin-top: 7%;
 }
 
 header{
@@ -40,11 +41,22 @@ header{
     width: 97.5%;
     height: 50px;
 }
-
+.fixed-header{
+    position: fixed;
+    width: 97,5%;
+    text-align: center;
+    z-index: 10000;
+    padding: 20px 0;
+}
 
 .header .titulo{
     text-align: center;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
 header .logo img{
@@ -126,7 +138,14 @@ form{
     padding: 10px;
 }
 
-
+.imagen{
+    width: 300px;
+    height: 300px;
+    border-radius: 5%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10%;
+}
 
 .sticky-footer {
     background-color: rgb(91, 148, 185);
